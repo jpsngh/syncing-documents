@@ -4,10 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": " npm run client && node server ",
+    "dev": " concurrently  \"npm run client\" \"node server\" ",
     "server": "node index.js --prefix server",
-    "client": "npm run dev ",
-    "dev": "vite",
+    "client": "npm run start ",
+    "start": "vite",
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
