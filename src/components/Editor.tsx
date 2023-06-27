@@ -11,7 +11,8 @@ import  {io} from 'socket.io-client'
 
 
 
-const Editor = () => {
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const Editor = ({styles}:any) => {
   const {id:documentId} = useParams()
 
   const [socket,setSocket] = useState< any>();
@@ -119,7 +120,7 @@ useEffect(()=>{
 
 
     <div className="flex flex-row align-center justify-center m-20"> 
-    <div  style={{width:700,height:500}} >
+    <div  style={ styles ?styles :{width:700,height:500}} >
 
       <div  ref={quillRef}  > </div>
     </div>

@@ -2,6 +2,7 @@ import { Server } from "socket.io";
 import mongoose from "mongoose";
 import Document from "./Doc.js";
 
+
 export const DocModel = mongoose.model("Document", Document);
 await mongoose.connect('mongodb+srv://jpsngh:dondondonX1@pos.tarufnj.mongodb.net/Document?retryWrites=true&w=majority').then(()=>{
     console.log("connection established");
@@ -22,8 +23,8 @@ io.on("connection",socket =>{
 
     socket.on("get-document", async documentId=>{
      const document =   await  findOrCreateDocument(documentId);
-       
-        socket.join(documentId);
+        const data = ""
+        socket.join(documentId );
         socket.emit("load-document",document.data,()=>{
             console.log(document.data);
         })
