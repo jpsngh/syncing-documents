@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": " concurrently \"node index.js\"\"npm run client\"",
+    "start": " concurrently \"node server\" \"npm run client\"",
     "server": "node index.js --prefix server",
     "client": "npm run dev --ignore server",
     "dev": "vite",
