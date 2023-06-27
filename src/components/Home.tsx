@@ -1,7 +1,7 @@
 
-import { HtmlHTMLAttributes, useState } from 'react';
+import {  useState } from 'react';
 import { useNavigate } from 'react-router'
-import Editor from './Editor';
+
 
 
 
