@@ -4,7 +4,8 @@ const Schema = mongoose.Schema;
 const Document = new Schema({
    
     _id:String ,
-    data:Object
+    data:Object,
+    room:String
   
 });
 

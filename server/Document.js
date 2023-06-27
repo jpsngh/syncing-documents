@@ -8,6 +8,6 @@ const Document = new Schema({
   
 });
 
- export const DocModel = mongoose.model("Document", Document);
+
   
  export default Document
