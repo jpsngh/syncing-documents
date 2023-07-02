@@ -30,8 +30,8 @@ const Home = () => {
       </div>
 
     <div className='flex flex-row  gap-5 my-20'>
-      <img src="./public/gif.gif" className='border border-black h-[200px] ' placeholder='Screen 1'></img>
-      <img src="./public/gif.gif" className='border border-black h-[200px]' ></img>
+      <img src="./gif.gif" className='border border-black h-[200px] ' placeholder='Screen 1'></img>
+      <img src="./gif.gif" className='border border-black h-[200px]' ></img>
     </div>
    <form className= {`w-full h-full flex flex-col justify-center items-center m-2 p-5font-mono `}  onSubmit={handle} >
     <input className=' p-5 border border-gray-400 m-2' name="room" type='text' onChange={(e)=>setText(e.target.value)} placeholder='Enter Room...'/> 
